@@ -20,4 +20,21 @@ function u($string=""){
     return htmlspecialchars($string);
   }
 
+  function error_404(){
+    header($_SERVER["SERVER_PROTOCOL"] . "404 NOT FOUND");
+     // $_SERVER - superglobal
+    exit();
+
+  }
+
+  function error_500(){
+    header($_SERVER["SERVER_PROTOCOL"] . "500 INTERNAL SERVER ERROR");
+    exit();
+  }
+
+  function redirect_to($location){
+    header("Location: " . $location);
+    exit();
+  }
+
 ?>
