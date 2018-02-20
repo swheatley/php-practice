@@ -17,16 +17,17 @@ require_once('../../../private/initialize.php');
 
 
  ?>
+ <?php $page_title = 'Edit Subject'; ?>
+ <?php include(SHARED_PATH . '/staff_header.php'); ?>
+
  <a class="back_link" href="<?php echo url_for('/staff/subjects/index.php');?>">
    &laquo; Back to List</a>
- <?php $page_title = 'Create Subject'; ?>
- <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
  <div id="content">
   <a href="#"></a>
-  <div class="subject new">
-    <h1>Create Subject</h1>
-    <form  action="index.html" method="post">
+  <div class="subject edit">
+    <h1>Edit Subject</h1>
+    <form  action="" method="post">
       <dl class="">
         <dt>Menu Name</dt>
         <dd><input type="text" name="menu" value=""/></dd>
@@ -52,7 +53,7 @@ require_once('../../../private/initialize.php');
         </dl>
 
     <div id="operations">
-      <input type="submit" value="Create Subject" />
+      <input type="submit" value="Edit Subject" />
     </div>
     </form>
   </div>
